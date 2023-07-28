@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+  </head>
+  <body>
+    <div class="vector">
+      <img src="./assets/img/Vector 1.png" alt="" />
+    </div>
+    <div class="calcBody">
+      <div class="evalIcon">=</div>
+      <div class="calcInp"></div>
+      <div class="calcResult">0</div>
+      <div class="calcLine"></div>
+      <div class="calculatorWrapper">
+        <button class="act" value="c" id="clear">C</button>
+        <button class="act" onclick="getValue(this.value)" value="/">/</button>
+        <button class="act" onclick="getValue(this.value)" value="%">%</button>
+        <button class="act" onclick="getValue(this.value)" value="*">X</button>
+
+        <button class="num" onclick="getValue(this.value)" value="7">7</button>
+        <button class="num" onclick="getValue(this.value)" value="8">8</button>
+        <button class="num" onclick="getValue(this.value)" value="9">9</button>
+        <button class="act" onclick="reverse()" value="r">±</button>
+        <button class="num" onclick="getValue(this.value)" value="4">4</button>
+        <button class="num" onclick="getValue(this.value)" value="5">5</button>
+        <button class="num" onclick="getValue(this.value)" value="6">6</button>
+        <button class="act" onclick="getValue(this.value)" value="-">-</button>
+        <button class="num" onclick="getValue(this.value)" value="1">1</button>
+        <button class="num" onclick="getValue(this.value)" value="2">2</button>
+        <button class="num" onclick="getValue(this.value)" value="3">3</button>
+        <button class="act" onclick="getValue(this.value)" value="+">+</button>
+        <button class="act" onclick="getValue(this.value)" value=".">.</button>
+        <button class="num" onclick="getValue(this.value)" value="0">0</button>
+        <button class="act" onclick="backSpace()" id="erase">←</button>
+        <button class="act" onclick="evalu()" id="eval">=</button>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/index.js"></script>
+</html>
